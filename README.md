@@ -2,6 +2,34 @@
 
 Datas em formato pt-BR
 
++ [Instalação](#Instalação)
+    + [Listar Funções](#Listar funções e retornos)
+	+ [Utilização](#Utilização)
++ [Change log](#Change log)
++ [Funções](#Funções)
+	+ [getDay()](#GetDay())
+    + [getMonthNumber()](#getMonthNumber())
+    + [getMonth()](#getMonth())
+    + [getYear()](#getYear())
+    + [getWeekdayNumber()](#getWeekdayNumber())
+    + [getWeekday()](#getWeekday())
+    + [getDate()](#getDate(delimiter)())
+    + [getExtendedDate()](#getExtendedDate())
+    + [getExtendedWeekdayDate()](#getExtendedWeekdayDate())
+    + [getExtendedCityDate()](#getExtendedCityDate(city))
+    + [getMonthNumberYear()](#getMonthNumberYear())
+    + [getMonthYear()](#getMonthYear())
+    + [getHour()](#getHour())
+    + [geExtendedtHour()](#geExtendedtHour())
+    + [getMinute()](#GetMinute())
+    + [getExtendedMinute()](#getExtendedMinute())
+    + [getSecond()](#getSecond())
+    + [getExtendedSecond()](#getExtendedSecond())
+    + [getTime()](#getTime())
+    + [getExtendedTime()](#getExtendedTime())
+    + [getHourMinute()](#getHourMinute())
+    + [getExtendedHourMinute()](#getExtendedHourMinute())
+
 ## Instalação
 
 `npm install -S date-pt-br`
