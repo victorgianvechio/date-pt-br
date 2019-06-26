@@ -1,5 +1,9 @@
 # date-pt-br
 
+[![npm](https://img.shields.io/npm/dt/date-pt-br.svg)](https://www.npmjs.com/package/date-pt-br)
+[![license](https://img.shields.io/npm/l/date-pt-br.svg?style=flat-square)](https://github.com/victorgianvechio/date-pt-br/blob/master/LICENSE)
+[![version](https://img.shields.io/npm/v/date-pt-br.svg?style=for-the-badge)](https://github.com/victorgianvechio/date-pt-br/blob/master/CHANGELOG.md)
+
 Datas em formato pt-BR
 
 + [Instalação](#Instalação)
@@ -30,6 +34,8 @@ Datas em formato pt-BR
     + [getHourMinute()](#getHourMinute)
     + [getExtendedHourMinute()](#getExtendedHourMinute)
 
+----
+
 ## Instalação
 
 `npm install -S date-pt-br`
@@ -46,9 +52,13 @@ Listar todas as funções e retornos
 const date = require('date-pt-br')
 ```
 
+----
+
 ## Changelog
 
 Veja as notas de atualização em [CHANGELOG](https://github.com/victorgianvechio/date-pt-br/blob/master/CHANGELOG.md).
+
+----
 
 ## Funções
 
