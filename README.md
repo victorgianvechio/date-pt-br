@@ -3,12 +3,12 @@
 Datas em formato pt-BR
 
 + [Instalação](#Instalação)
-    + [Listar Funções](#Listar funções e retornos)
+    + [Scripts](#Scripts)
 	+ [Utilização](#Utilização)
-+ [Change log](#Change log)
++ [Changelog](#Change log)
 + [Funções](#Funções)
-	+ [getDay()](#GetDay())
-    + [getMonthNumber()](#getMonthNumber())
+	+ [getDay()](#GetDay)
+    + [getMonthNumber()](#getMonthNumber)
     + [getMonth()](#getMonth())
     + [getYear()](#getYear())
     + [getWeekdayNumber()](#getWeekdayNumber())
@@ -34,7 +34,9 @@ Datas em formato pt-BR
 
 `npm install -S date-pt-br`
 
-### Listar funções e retornos
+### Scripts
+
+Listar todas as funções e retornos
 
 `npm run list-functions`
 
