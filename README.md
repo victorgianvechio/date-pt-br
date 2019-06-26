@@ -52,13 +52,9 @@ Listar todas as funções e retornos
 const date = require('date-pt-br')
 ```
 
-----
-
 ## Changelog
 
 Veja as notas de atualização em [CHANGELOG](https://github.com/victorgianvechio/date-pt-br/blob/master/CHANGELOG.md).
-
-----
 
 ## Funções
 
