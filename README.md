@@ -5,30 +5,30 @@ Datas em formato pt-BR
 + [Instalação](#Instalação)
     + [Scripts](#Scripts)
 	+ [Utilização](#Utilização)
-+ [Changelog](#Change log)
++ [Changelog](#Changelog)
 + [Funções](#Funções)
 	+ [getDay()](#GetDay)
     + [getMonthNumber()](#getMonthNumber)
-    + [getMonth()](#getMonth())
-    + [getYear()](#getYear())
-    + [getWeekdayNumber()](#getWeekdayNumber())
-    + [getWeekday()](#getWeekday())
-    + [getDate()](#getDate(delimiter)())
-    + [getExtendedDate()](#getExtendedDate())
-    + [getExtendedWeekdayDate()](#getExtendedWeekdayDate())
-    + [getExtendedCityDate()](#getExtendedCityDate(city))
-    + [getMonthNumberYear()](#getMonthNumberYear())
-    + [getMonthYear()](#getMonthYear())
-    + [getHour()](#getHour())
-    + [geExtendedtHour()](#geExtendedtHour())
-    + [getMinute()](#GetMinute())
-    + [getExtendedMinute()](#getExtendedMinute())
-    + [getSecond()](#getSecond())
-    + [getExtendedSecond()](#getExtendedSecond())
-    + [getTime()](#getTime())
-    + [getExtendedTime()](#getExtendedTime())
-    + [getHourMinute()](#getHourMinute())
-    + [getExtendedHourMinute()](#getExtendedHourMinute())
+    + [getMonth()](#getMonth)
+    + [getYear()](#getYear)
+    + [getWeekdayNumber()](#getWeekdayNumber)
+    + [getWeekday()](#getWeekday)
+    + [getDate(delimiter)](#getDate(delimiter))
+    + [getExtendedDate()](#getExtendedDate)
+    + [getExtendedWeekdayDate()](#getExtendedWeekdayDate)
+    + [getExtendedCityDate(city)](#getExtendedCityDate)
+    + [getMonthNumberYear()](#getMonthNumberYear)
+    + [getMonthYear()](#getMonthYear)
+    + [getHour()](#getHour)
+    + [geExtendedtHour()](#geExtendedtHour)
+    + [getMinute()](#GetMinute)
+    + [getExtendedMinute()](#getExtendedMinute)
+    + [getSecond()](#getSecond)
+    + [getExtendedSecond()](#getExtendedSecond)
+    + [getTime()](#getTime)
+    + [getExtendedTime()](#getExtendedTime)
+    + [getHourMinute()](#getHourMinute)
+    + [getExtendedHourMinute()](#getExtendedHourMinute)
 
 ## Instalação
 
@@ -46,7 +46,7 @@ Listar todas as funções e retornos
 const date = require('date-pt-br')
 ```
 
-## Change log
+## Changelog
 
 Veja as notas de atualização em [CHANGELOG](https://github.com/victorgianvechio/date-pt-br/blob/master/CHANGELOG.md).
 
