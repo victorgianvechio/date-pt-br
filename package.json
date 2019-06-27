@@ -1,6 +1,6 @@
 {
     "name": "date-pt-br",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "Datas em formato pt-BR",
     "main": "./lib/date-pt-br.js",
     "private": false,
@@ -25,6 +25,9 @@
     },
     "keywords": [
         "date",
-        "pt-BR"
+        "time", 
+        "format",
+        "pt-BR",
+        "utility"
     ]
 }
