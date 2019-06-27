@@ -4,13 +4,15 @@
 [![license](https://img.shields.io/npm/l/date-pt-br.svg)](https://github.com/victorgianvechio/date-pt-br/blob/master/LICENSE)
 [![version](https://img.shields.io/npm/v/date-pt-br.svg)](https://github.com/victorgianvechio/date-pt-br/blob/master/CHANGELOG.md)
 
-Datas em formato pt-BR
+Dates and time formatted to pt-BR.
 
-+ [Instalação](#Instalação)
+**Table of content**
+
++ [Installation](#Installation)
     + [Scripts](#Scripts)
-	+ [Utilização](#Utilização)
+	+ [Usage](#Usage)
 + [Changelog](#Changelog)
-+ [Funções](#Funções)
++ [Functions](#Functions)
 	+ [getDay()](#GetDay)
     + [getMonthNumber()](#getMonthNumber)
     + [getMonth()](#getMonth)
@@ -36,17 +38,23 @@ Datas em formato pt-BR
 
 ----
 
-## Instalação
+## Installation
 
-`npm install -S date-pt-br`
+via npm:
+
+```sh
+npm i -S date-pt-br
+```
 
 ### Scripts
 
-Listar todas as funções e retornos
+list all functions:
 
-`npm run list-functions`
+```sh
+npm run list-functions
+```
 
-### Utilização
+### Usage
 
 ```javascript
 const date = require('date-pt-br')
@@ -54,98 +62,180 @@ const date = require('date-pt-br')
 
 ## Changelog
 
-Veja as notas de atualização em [CHANGELOG](https://github.com/victorgianvechio/date-pt-br/blob/master/CHANGELOG.md).
+See the update notes at [CHANGELOG](https://github.com/victorgianvechio/date-pt-br/blob/master/CHANGELOG.md).
 
-## Funções
+## Fuctions
 
 ### getDay()
 
-Retorna o dia do mês **(01 a 31)**
+- Return day **(01 a 31)**
+
+```javascript
+let val = date.getDay() // => 27
+```
 
 ### getMonthNumber()
 
-Retorna o mês em número **(01 a 12)**
+- Return month number **(01 a 12)**
+
+```javascript
+let val = date.getMonthNumber() // => 06
+```
 
 ### getMonth()
 
-Retorna o mês por extenso. Ex: **Abril**
+```javascript
+let val = date.getMonth() // => Junho
+```
+
+**Table of months**
+
+| number | month     | 
+|:-------|:----------|
+| 01     | Janeiro   |
+| 02     | Fevereiro |
+| 03     | Março     |
+| 04     | Abril     | 
+| 05     | Maio      | 
+| 06     | Junho     | 
+| 07     | Julho     | 
+| 08     | Agosto    | 
+| 09     | Setembro  | 
+| 10     | Outubro   | 
+| 11     | Novembro  | 
+| 12     | Dezembro  | 
 
 ### getYear()
 
-Retorna o ano completo. Ex: **2019**
+```javascript
+let val = date.getYear() // => 2019
+```
 
 ### getWeekdayNumber()
 
-Retorna o dia da semana em número **(1 a 7)**
+- Return the number of the week **(1 a 7)**
+
+```javascript
+let val = date.getWeekdayNumber() // => 5
+```
 
 ### getWeekday()
 
-Retorna o dia da semana por extenso. Ex: **Segunda-Feira**
+```javascript
+let val = date.getWeekday() // => Quinta-Feira
+```
+
+**Table of weekday**
+
+| number | weekday       | 
+|:-------|:--------------|
+|  1     | Domingo       |
+|  2     | Segunda-Feira |
+|  3     | Terça-Feira   |
+|  4     | Quarta-Feira  | 
+|  5     | Quinta-Feira  | 
+|  6     | Sexta-Feira   | 
+|  7     | Sábado        | 
 
 ### getDate(delimiter)
 
-Retorna a data separada pelo parâmetro delimitador.
-
-**getDate("-")** = **01-04-2019**
-
-Default **getDate()** = **01/04/2019**
+```javascript
+let val = date.getDate() // => 27/06/2019
+let val = date.getDate('-') // => 27-06-2019
+```
 
 ### getExtendedDate()
 
-Retorna a data por extenso. Ex: **01 de Abril de 2019**
+```javascript
+let val = date.getExtendedDate() // => 27 de Junho de 2019
+```
 
 ### getExtendedWeekdayDate()
 
-Retorna a data com dia da semana por extenso. Ex: **Segunda-Feira, 01 de Abril de 2019**
+```javascript
+let val = date.getExtendedWeekdayDate() // => Quinta-Feira, 27 de Junho de 2019
+```
 
 ### getExtendedCityDate(city)
 
-Retorna a data por extenso com a cidade passada por parâmetro. Ex: **São Paulo, 01 de Abril de 2019**
+```javascript
+let val = date.getExtendedCityDate('São Paulo') // => São Paulo, 27 de Junho de 2019
+```
 
 ### getMonthNumberYear()
 
-Retorna mês e ano. Ex: **04/2019**
+```javascript
+let val = date.getMonthNumberYear() // => 06/2019
+```
 
 ### getMonthYear()
 
-Retorna mês por extenso e ano. Ex: **Abril/2019**
+```javascript
+let val = date.getMonthYear() // => Junho/2019
+```
 
 ### getHour()
 
-Retorna hora **(01 a 23)**
+- Return hours **(01 a 23)**
 
-### geExtendedtHour()
+```javascript
+let val = date.getHour() // => 08
+```
 
-Retorna hora por extenso. Ex: **14 horas**
+### geExtendedHour()
+
+```javascript
+let val = date.geExtendedHour() // => 08 horas
+```
 
 ### getMinute()
 
-Retorna minuto **(01 a 59)**
+- Return minutes **(01 a 59)**
+
+```javascript
+let val = date.getMinute() // => 53
+```
 
 ### getExtendedMinute()
 
-Retorna minuto por extenso. Ex: **47 minutos**
+```javascript
+let val = date.getExtendedMinute() // => 53 minutos
+```
 
 ### getSecond()
 
-Retorna segundo **(01 a 59)**
+- Return seconds **(01 a 59)**
+
+```javascript
+let val = date.getSecond() // => 32
+```
 
 ### getExtendedSecond()
 
-Retorna segundo por extenso. Ex: **32 segundos**
+```javascript
+let val = date.getExtendedSecond() // => 32 segundos
+```
 
 ### getTime()
 
-retorna a hora. Ex: **14:47:32**
+```javascript
+let val = date.getTime() // => 08:53:32
+```
 
 ### getExtendedTime()
 
-retorna a hora por extenso. Ex: **14 horas e 47 minutos e 32 segundos**
+```javascript
+let val = date.getExtendedTime() // => 08 horas e 53 minutos e 32 segundos
+```
 
 ### getHourMinute()
 
-retorna a hora e minuto. Ex: **14:47**
+```javascript
+let val = date.getHourMinute() // => 08:53
+```
 
 ### getExtendedHourMinute()
 
-retorna a hora e minuto por extenso. Ex: **14 horas e 47 minutos**
+```javascript
+let val = date.getExtendedHourMinute() // => 08 horas e 53 minutos
+```
