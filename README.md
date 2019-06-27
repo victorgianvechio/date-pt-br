@@ -31,10 +31,10 @@ Dates and time formatted to pt-BR.
     + [getExtendedMinute()](#getExtendedMinute)
     + [getSecond()](#getSecond)
     + [getExtendedSecond()](#getExtendedSecond)
-    + [getTime()](#getTime)
-    + [getExtendedTime()](#getExtendedTime)
-    + [getHourMinute()](#getHourMinute)
-    + [getExtendedHourMinute()](#getExtendedHourMinute)
+    + [getTime(delimiter)](#getTimeDelimiter)
+    + [getExtendedTime(delimiter)](#getExtendedTimeDelimiter)
+    + [getHourMinute(delimiter)](#getHourMinuteDelimiter)
+    + [getExtendedHourMinute(delimiter)](#getExtendedHourMinuteDelimiter)
 
 ----
 
