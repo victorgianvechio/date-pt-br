@@ -68,7 +68,7 @@ See the update notes at [CHANGELOG](https://github.com/victorgianvechio/date-pt-
 
 ### getDay()
 
-- Return day **(01 a 31)**
+- return day **(01 a 31)**
 
 ```javascript
 let val = date.getDay() // => 27
@@ -76,7 +76,7 @@ let val = date.getDay() // => 27
 
 ### getMonthNumber()
 
-- Return month number **(01 a 12)**
+- return month number **(01 a 12)**
 
 ```javascript
 let val = date.getMonthNumber() // => 06
@@ -87,8 +87,6 @@ let val = date.getMonthNumber() // => 06
 ```javascript
 let val = date.getMonth() // => Junho
 ```
-
-**Table of months**
 
 | number | month     | 
 |:-------|:----------|
@@ -113,7 +111,7 @@ let val = date.getYear() // => 2019
 
 ### getWeekdayNumber()
 
-- Return the number of the week **(1 a 7)**
+- return the number of the week **(1 a 7)**
 
 ```javascript
 let val = date.getWeekdayNumber() // => 5
@@ -124,8 +122,6 @@ let val = date.getWeekdayNumber() // => 5
 ```javascript
 let val = date.getWeekday() // => Quinta-Feira
 ```
-
-**Table of weekday**
 
 | number | weekday       | 
 |:-------|:--------------|
@@ -139,8 +135,10 @@ let val = date.getWeekday() // => Quinta-Feira
 
 ### getDate(delimiter)
 
+- {string} **delimiter** - used to separate day, number and year *(optional)*
+
 ```javascript
-let val = date.getDate() // => 27/06/2019
+let val = date.getDate() // default => 27/06/2019
 let val = date.getDate('-') // => 27-06-2019
 ```
 
@@ -176,7 +174,7 @@ let val = date.getMonthYear() // => Junho/2019
 
 ### getHour()
 
-- Return hours **(01 a 23)**
+- return hours **(01 a 23)**
 
 ```javascript
 let val = date.getHour() // => 08
@@ -190,7 +188,7 @@ let val = date.geExtendedHour() // => 08 horas
 
 ### getMinute()
 
-- Return minutes **(01 a 59)**
+- return minutes **(01 a 59)**
 
 ```javascript
 let val = date.getMinute() // => 53
@@ -204,7 +202,7 @@ let val = date.getExtendedMinute() // => 53 minutos
 
 ### getSecond()
 
-- Return seconds **(01 a 59)**
+- return seconds **(01 a 59)**
 
 ```javascript
 let val = date.getSecond() // => 32
@@ -216,26 +214,39 @@ let val = date.getSecond() // => 32
 let val = date.getExtendedSecond() // => 32 segundos
 ```
 
-### getTime()
+### getTime(delimiter)
+
+- {string} **delimiter** - used to separate hours, minutes and seconds *(optional)*
 
 ```javascript
-let val = date.getTime() // => 08:53:32
+let val = date.getTime() // default => 08:53:32
+let val = date.getTime('-') // => 08-53-32
+
 ```
 
-### getExtendedTime()
+### getExtendedTime(delimiter)
+
+- {string} **delimiter** - used to separate hours, minutes and seconds *(optional)*
 
 ```javascript
-let val = date.getExtendedTime() // => 08 horas e 53 minutos e 32 segundos
+let val = date.getExtendedTime() // default => 08 horas e 53 minutos e 32 segundos
+let val = date.getExtendedTime(', ') // => 08 horas, 53 minutos, 32 segundos
 ```
 
-### getHourMinute()
+### getHourMinute(delimiter)
+
+- {string} **delimiter** - used to separate hours and minutes *(optional)*
 
 ```javascript
-let val = date.getHourMinute() // => 08:53
+let val = date.getHourMinute() // default => 08:53
+let val = date.getHourMinute('-') // => 08-53
 ```
 
-### getExtendedHourMinute()
+### getExtendedHourMinute(delimiter)
+
+- {string} **delimiter** - used to separate hours and minutes *(optional)*
 
 ```javascript
-let val = date.getExtendedHourMinute() // => 08 horas e 53 minutos
+let val = date.getExtendedHourMinute() // default => 08 horas e 53 minutos
+let val = date.getExtendedHourMinute(', ') // => 08 horas, 53 minutos
 ```
