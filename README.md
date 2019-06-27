@@ -64,7 +64,7 @@ const date = require('date-pt-br')
 
 See the update notes at [CHANGELOG](https://github.com/victorgianvechio/date-pt-br/blob/master/CHANGELOG.md).
 
-## Fuctions
+## Functions
 
 ### getDay()
 
