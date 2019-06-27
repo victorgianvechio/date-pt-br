@@ -20,4 +20,6 @@
 
 - Added script:
 
-`npm run list-functions` 
+```sh
+npm run list-functions
+```
