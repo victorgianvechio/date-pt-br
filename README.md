@@ -35,7 +35,7 @@ Dates and time formatted to pt-BR.
     -   [getExtendedTime(delimiter)](#getExtendedTimeDelimiter)
     -   [getHourMinute(delimiter)](#getHourMinuteDelimiter)
     -   [getExtendedHourMinute(delimiter)](#getExtendedHourMinuteDelimiter)
-    -   [getDateTime(delimiter1,delimiter2,delimiter3)](#getDateTimeDelimiter1SepDelimiter2)
+    -   [getDateTime(delimiter1,delimiter2,delimiter3)](#getDateTimeDelimiter1-Sep-Delimiter2)
 
 ---
 
