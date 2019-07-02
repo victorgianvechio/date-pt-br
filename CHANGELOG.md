@@ -1,5 +1,9 @@
 # Change Log
 
+## date-pt-br v1.0.9 (02 Jul 2019)
+
+-   New function _getDateTime(delimiter1, sep, delimiter2)_ that returns date and time;
+
 ## date-pt-br v1.0.8 (01 Jul 2019)
 
 -   Fixed _getDay()_ function that returns '1' instead of '01';
