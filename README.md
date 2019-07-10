@@ -4,7 +4,7 @@
 [![license](https://img.shields.io/npm/l/date-pt-br.svg)](https://github.com/victorgianvechio/date-pt-br/blob/master/LICENSE)
 [![version](https://img.shields.io/npm/v/date-pt-br.svg)](https://github.com/victorgianvechio/date-pt-br/blob/master/CHANGELOG.md)
 
-Dates and time formatted to pt-BR.
+Get current date in pt-BR or format other dates to pt-BR.
 
 **Table of content**
 
@@ -12,7 +12,7 @@ Dates and time formatted to pt-BR.
     -   [Scripts](#Scripts)
     -   [Usage](#Usage)
 -   [Changelog](#Changelog)
--   [Functions](#Functions)
+-   [Current Date Functions](#CurrentDateFunctions)
     -   [getDay()](#GetDay)
     -   [getMonthNumber()](#getMonthNumber)
     -   [getMonth()](#getMonth)
@@ -36,6 +36,8 @@ Dates and time formatted to pt-BR.
     -   [getHourMinute(delimiter)](#getHourMinuteDelimiter)
     -   [getExtendedHourMinute(delimiter)](#getExtendedHourMinuteDelimiter)
     -   [getDateTime(delimiter1,delimiter2,delimiter3)](#getDateTimeDelimiter1-Sep-Delimiter2)
+-   [Format Date Functions](#FormatDateFunctions)
+    -   [toPtBr(date, delimiter)](#toPtBrDateDelimiter)
 
 ---
 
@@ -65,7 +67,9 @@ const date = require('date-pt-br')
 
 see the update notes at [CHANGELOG](https://github.com/victorgianvechio/date-pt-br/blob/master/CHANGELOG.md).
 
-## Functions
+## Current Date Functions
+
+All functions below get the current date in pt-BR format.
 
 ### getDay()
 
@@ -136,7 +140,7 @@ let val = date.getWeekday() // => Quinta-Feira
 
 ### getDate(delimiter)
 
--   {string} **delimiter** - use to separate day, month and year _(optional)_
+-   {string} **delimiter** - used to separate day, month and year _(optional)_
 
 ```javascript
 let val = date.getDate() // default => 27/06/2019
@@ -217,7 +221,7 @@ let val = date.getExtendedSecond() // => 32 segundos
 
 ### getTime(delimiter)
 
--   {string} **delimiter** - use to separate hours, minutes and seconds _(optional)_
+-   {string} **delimiter** - used to separate hours, minutes and seconds _(optional)_
 
 ```javascript
 let val = date.getTime() // default => 08:53:32
@@ -226,7 +230,7 @@ let val = date.getTime('-') // => 08-53-32
 
 ### getExtendedTime(delimiter)
 
--   {string} **delimiter** - use to separate hours, minutes and seconds _(optional)_
+-   {string} **delimiter** - used to separate hours, minutes and seconds _(optional)_
 
 ```javascript
 let val = date.getExtendedTime() // default => 08 horas e 53 minutos e 32 segundos
@@ -235,7 +239,7 @@ let val = date.getExtendedTime(', ') // => 08 horas, 53 minutos, 32 segundos
 
 ### getHourMinute(delimiter)
 
--   {string} **delimiter** - use to separate hours and minutes _(optional)_
+-   {string} **delimiter** - used to separate hours and minutes _(optional)_
 
 ```javascript
 let val = date.getHourMinute() // default => 08:53
@@ -244,7 +248,7 @@ let val = date.getHourMinute('-') // => 08-53
 
 ### getExtendedHourMinute(delimiter)
 
--   {string} **delimiter** - use to separate hours and minutes _(optional)_
+-   {string} **delimiter** - used to separate hours and minutes _(optional)_
 
 ```javascript
 let val = date.getExtendedHourMinute() // default => 08 horas e 53 minutos
@@ -261,3 +265,19 @@ let val = date.getExtendedHourMinute(', ') // => 08 horas, 53 minutos
 let val = date.getDateTime() // default => 27/06/2019 08:53:32
 let val = date.getDateTime('-', ' | ', ':') // => 27-06-2019 | 08:53:32
 ```
+
+## Format Date Functions
+
+All functions below convert dates to pr-BR.
+
+### toPtBr(date, delimiter)
+
+-   {string} **date** - date to convert _(optional)_
+-   {string} **delimiter** - used to separate day, month and year _(optional)_
+
+```javascript
+let val = date.toPtBr() // default => 10/07/2019
+let val = date.toPtBr('2015-12-19T10:30:00', '-') // => 19-12-2015
+```
+
+Copyright ® 2019 Victor Gianvechio

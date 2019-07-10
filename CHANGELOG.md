@@ -1,5 +1,9 @@
 # Change Log
 
+## date-pt-br v1.1.0 (10 Jul 2019)
+
+-   New function _toPtBr(date, delimiter)_ that convert date to pt-BR;
+
 ## date-pt-br v1.0.9 (02 Jul 2019)
 
 -   New function _getDateTime(delimiter1, sep, delimiter2)_ that returns date and time;
