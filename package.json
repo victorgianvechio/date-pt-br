@@ -1,7 +1,7 @@
 {
     "name": "date-pt-br",
     "version": "1.1.0",
-    "description": "Datas em formato pt-BR",
+    "description": "Dates in pt-BR.",
     "main": "./lib/date-pt-br.js",
     "private": false,
     "bin": {

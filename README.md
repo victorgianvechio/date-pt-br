@@ -12,7 +12,7 @@ Get current date in pt-BR or format other dates to pt-BR.
     -   [Scripts](#Scripts)
     -   [Usage](#Usage)
 -   [Changelog](#Changelog)
--   [Current Date Functions](#CurrentDateFunctions)
+-   [Current Date Functions](#Current-Date-Functions)
     -   [getDay()](#GetDay)
     -   [getMonthNumber()](#getMonthNumber)
     -   [getMonth()](#getMonth)
@@ -36,8 +36,8 @@ Get current date in pt-BR or format other dates to pt-BR.
     -   [getHourMinute(delimiter)](#getHourMinuteDelimiter)
     -   [getExtendedHourMinute(delimiter)](#getExtendedHourMinuteDelimiter)
     -   [getDateTime(delimiter1,delimiter2,delimiter3)](#getDateTimeDelimiter1-Sep-Delimiter2)
--   [Format Date Functions](#FormatDateFunctions)
-    -   [toPtBr(date, delimiter)](#toPtBrDateDelimiter)
+-   [Format Date Functions](#Format-Date-Functions)
+    -   [toPtBr(date,delimiter)](#toPtBrDateDelimiter)
 
 ---
 
