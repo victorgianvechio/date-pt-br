@@ -35,9 +35,9 @@ Get current date in pt-BR or format other dates to pt-BR.
     -   [getExtendedTime(delimiter)](#getExtendedTimeDelimiter)
     -   [getHourMinute(delimiter)](#getHourMinuteDelimiter)
     -   [getExtendedHourMinute(delimiter)](#getExtendedHourMinuteDelimiter)
-    -   [getDateTime(delimiter1,delimiter2,delimiter3)](#getDateTimeDelimiter1-Sep-Delimiter2)
+    -   [getDateTime(delimiter1, delimiter2, delimiter3)](#getDateTimeDelimiter1-Sep-Delimiter2)
 -   [Format Date Functions](#Format-Date-Functions)
-    -   [toPtBr(date,delimiter)](#toPtBrDateDelimiter)
+    -   [toPtBr(date, delimiter)](#toPtBrDate-Delimiter)
 
 ---
 
