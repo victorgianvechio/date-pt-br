@@ -15,10 +15,6 @@
     "author": "Victor Gianvechio <victor.gianvecchio@live.com>",
     "copyright": "© 2019, Victor Gianvechio",
     "license": "MIT",
-    "devDependencies": {
-        "babel-eslint": "^10.0.1",
-        "eslint": "^5.16.0"
-    },
     "repository": {
         "type": "git",
         "url": "https://github.com/victorgianvechio/date-pt-br.git"
@@ -29,5 +25,9 @@
         "format",
         "pt-BR",
         "utility"
-    ]
+    ],
+    "devDependencies": {
+        "babel-eslint": "^10.0.2",
+        "eslint": "^6.0.1"
+    }
 }
