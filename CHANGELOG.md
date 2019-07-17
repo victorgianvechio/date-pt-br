@@ -6,9 +6,9 @@
 
 -   All codes were refactored;
 
--   Now date-en-br is a _class_ and needs to be _instantiated_;
+-   Now date-en-br is a **class** and needs to be **instantiated**;
 
--   Now all functions have only one _optional_ parameter _(date)_. If no date is passed the function will use the current date;
+-   Now all functions have only one **optional** parameter **(date)**. If no date is passed the function will use the current date;
 
 -   Delimiters and sep must be configured after instance;
 
@@ -16,7 +16,7 @@ Ex:
 
 ```javascript
 const DatePtBR = require('date-pt-br')
-const myDate = new DatePtBR()
+const date = new DatePtBR()
 
 myDate.config({
     delimiterDate: '/',
@@ -26,8 +26,8 @@ myDate.config({
     sepTime: ' e '
 })
 
-myDate.getDay() // => 17
-myDate.getDay('07/23/2019') // 23
+date.getDay() // => 17
+date.getDay('07/23/2019') // 23
 ```
 
 #### Removed Functions

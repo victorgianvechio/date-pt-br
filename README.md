@@ -77,15 +77,30 @@ see the update notes at [CHANGELOG](https://github.com/victorgianvechio/date-pt-
 
 -   set delimiters and sep that are used by the functions.
 
--   {string} **delimiterDate** - used to separate day, month and year. Default _'/'_
+-   {string} **delimiterDate** - used to separate day, month and year. 
 
--   {string} **delimiterTime** - used to separate hours, minutes and seconds. Default _':'_. Ex: 08\**:*53\**:*20
+    -   Default **/**
+    -   Ex: 02 **/** 11 **/** 2019
 
--   {string} **sepDateTime** - used to separate date and time. Default _', '_. Ex: 02/01/2019\*_,_ 08:53:20
+-   {string} **delimiterTime** - used to separate hours, minutes and seconds.
 
--   {string} **sepDate** - used to separate date. Default _' de '_. Ex: 02 _de_ Janeiro de 2019
+    -   Default **:**
+    -   Ex: 08 **:** 53 **:** 20
 
--   {string} **sepDate** - used to separate time. Default _' e '_. Ex: 08 horas _e_ 53 minutos _e_ 20 segundos
+-   {string} **sepDateTime** - used to separate date and time.
+
+    -   Default **', '**
+    -   Ex: 02/01/2019 **,** 08:53:20
+
+-   {string} **sepDate** - used to separate date. 
+
+    -   Default **de**
+    -   Ex: 02 **de** Janeiro **de** 2019
+
+-   {string} **sepDate** - used to separate time. 
+
+    -   Default **e**
+    -   Ex: 08 horas **e** 53 minutos **e** 20 segundos
 
 ```javascript
 const DatePtBR = require('date-pt-br')
@@ -118,9 +133,9 @@ date.setDefaultConfig()
 
 All functions below are receive an optional date as a parameter. If no date is passed the function uses the current date.
 
-If the date passed is invalid the functions will return _'Invalid Date'_.
+If the date passed is invalid the functions will return **'Invalid Date'**.
 
--   {string} **date** - an date _(optional)_
+-   {string} **date** - a date _(optional)_
 
 ### getDay(date)
 
