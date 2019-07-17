@@ -1,5 +1,52 @@
 # Change Log
 
+## date-pt-br v1.2.0 (17 Jul 2019)
+
+### Huge Updates
+
+-   All codes were refactored;
+
+-   Now date-en-br is a _class_ and needs to be _instantiated_;
+
+-   Now all functions have only one _optional_ parameter _(date)_. If no date is passed the function will use the current date;
+
+-   Delimiters and sep must be configured after instance;
+
+Ex:
+
+```javascript
+const DatePtBR = require('date-pt-br')
+const myDate = new DatePtBR()
+
+myDate.config({
+    delimiterDate: '/',
+    delimiterTime: ':',
+    sepDateTime: ', ',
+    sepDate: ' de ',
+    sepTime: ' e '
+})
+
+myDate.getDay() // => 17
+myDate.getDay('07/23/2019') // 23
+```
+
+#### Removed Functions
+
+-   _getExtendedCityDate(city)_;
+-   _toPtBr(date, delimiter)_
+
+it does not make sense since all the functions already do the conversion after this update;
+
+#### New functions
+
+-   _getShortMonth(date)_;
+-   _getShortMonthYear(date)_;
+-   _getExtendedDateTime(date)_;
+-   _config(object)_;
+-   _setDefaultConfig()_;
+
+see more about this update at [README](https://github.com/victorgianvechio/date-pt-br/blob/master/README.md).
+
 ## date-pt-br v1.1.0 (10 Jul 2019)
 
 -   New function _toPtBr(date, delimiter)_ that convert date to pt-BR;
