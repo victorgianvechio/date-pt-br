@@ -12,32 +12,35 @@ Get current date in pt-BR or format other dates to pt-BR.
     -   [Scripts](#Scripts)
     -   [Usage](#Usage)
 -   [Changelog](#Changelog)
--   [Current Date Functions](#Current-Date-Functions)
-    -   [getDay()](#GetDay)
-    -   [getMonthNumber()](#getMonthNumber)
-    -   [getMonth()](#getMonth)
-    -   [getYear()](#getYear)
-    -   [getWeekdayNumber()](#getWeekdayNumber)
-    -   [getWeekday()](#getWeekday)
-    -   [getDate(delimiter)](#getDateDelimiter)
-    -   [getExtendedDate()](#getExtendedDate)
-    -   [getExtendedWeekdayDate()](#getExtendedWeekdayDate)
-    -   [getExtendedCityDate(city)](#getExtendedCityDateCity)
-    -   [getMonthNumberYear()](#getMonthNumberYear)
-    -   [getMonthYear()](#getMonthYear)
-    -   [getHour()](#getHour)
-    -   [geExtendedtHour()](#geExtendedtHour)
-    -   [getMinute()](#GetMinute)
-    -   [getExtendedMinute()](#getExtendedMinute)
-    -   [getSecond()](#getSecond)
-    -   [getExtendedSecond()](#getExtendedSecond)
-    -   [getTime(delimiter)](#getTimeDelimiter)
-    -   [getExtendedTime(delimiter)](#getExtendedTimeDelimiter)
-    -   [getHourMinute(delimiter)](#getHourMinuteDelimiter)
-    -   [getExtendedHourMinute(delimiter)](#getExtendedHourMinuteDelimiter)
-    -   [getDateTime(delimiter1, delimiter2, delimiter3)](#getDateTimeDelimiter1-Sep-Delimiter2)
--   [Format Date Functions](#Format-Date-Functions)
-    -   [toPtBr(date, delimiter)](#toPtBrDate-Delimiter)
+-   [Config Functions](#Config-Functions)
+    -   [config(object)](#configObject)
+    -   [setDefaultConfig()](#setDefaultConfig)
+-   [Date Functions](#Date-Functions)
+    -   [getDay(date)](#GetDayDate)
+    -   [getMonthNumber(date)](#getMonthNumberDate)
+    -   [getMonth(date)](#getMonthDate)
+    -   [getShortMonth(date)](#getShortMonthDate)
+    -   [getYear(date)](#getYearDate)
+    -   [getWeekdayNumber(date)](#getWeekdayNumberDate)
+    -   [getWeekday(date)](#getWeekdayDate)
+    -   [getDate(date)](#getDateDate)
+    -   [getExtendedDate(date)](#getExtendedDateDate)
+    -   [getExtendedWeekdayDate(date)](#getExtendedWeekdayDateDate)
+    -   [getMonthNumberYear(date)](#getMonthNumberYearDate)
+    -   [getMonthYear(date)](#getMonthYearDate)
+    -   [getShortMonthYear(date)](#getShortMonthYearDate)
+    -   [getHour(date)](#getHourDate)
+    -   [geExtendedtHour(date)](#geExtendedtHourDate)
+    -   [getMinute(date)](#GetMinuteDate)
+    -   [getExtendedMinute(date)](#getExtendedMinuteDate)
+    -   [getSecond(date)](#getSecondDate)
+    -   [getExtendedSecond(date)](#getExtendedSecondDate)
+    -   [getTime(date)](#getTimeDate)
+    -   [getExtendedTime(date)](#getExtendedTimeDate)
+    -   [getHourMinute(date)](#getHourMinuteDate)
+    -   [getExtendedHourMinute(date)](#getExtendedHourMinuteDate)
+    -   [getDateTime(date)](#getDateTimeDate)
+    -   [getExtendedDateTime(date)](#getExtendedDateTimeDate)
 
 ---
 
@@ -60,18 +63,66 @@ npm run list-functions
 ### Usage
 
 ```javascript
-const date = require('date-pt-br')
+const DatePtBR = require('date-pt-br')
+const date = new DatePtBR()
 ```
 
 ## Changelog
 
 see the update notes at [CHANGELOG](https://github.com/victorgianvechio/date-pt-br/blob/master/CHANGELOG.md).
 
-## Current Date Functions
+## Config Functions
 
-All functions below get the current date in pt-BR format.
+### config(object)
 
-### getDay()
+-   set delimiters and sep that are used by the functions.
+
+-   {string} **delimiterDate** - used to separate day, month and year. Default _'/'_
+
+-   {string} **delimiterTime** - used to separate hours, minutes and seconds. Default _':'_. Ex: 08\**:*53\**:*20
+
+-   {string} **sepDateTime** - used to separate date and time. Default _', '_. Ex: 02/01/2019\*_,_ 08:53:20
+
+-   {string} **sepDate** - used to separate date. Default _' de '_. Ex: 02 _de_ Janeiro de 2019
+
+-   {string} **sepDate** - used to separate time. Default _' e '_. Ex: 08 horas _e_ 53 minutos _e_ 20 segundos
+
+```javascript
+const DatePtBR = require('date-pt-br')
+const date = new DatePtBR()
+
+date.config({
+    delimiterDate: '/',
+    delimiterTime: ':',
+    sepDateTime: ', ',
+    sepDate: ' de ',
+    sepTime: ' e '
+})
+```
+
+### setDefaultConfig()
+
+-   set default config
+
+```javascript
+date.setDefaultConfig()
+
+// delimiterDate: '/',
+// delimiterTime: ':',
+// sepDateTime: ', ',
+// sepDate: ' de ',
+// sepTime: ' e '
+```
+
+## Date Functions
+
+All functions below are receive an optional date as a parameter. If no date is passed the function uses the current date.
+
+If the date passed is invalid the functions will return _'Invalid Date'_.
+
+-   {string} **date** - an date _(optional)_
+
+### getDay(date)
 
 -   returns day **(01 a 31)**
 
@@ -79,7 +130,7 @@ All functions below get the current date in pt-BR format.
 let val = date.getDay() // => 27
 ```
 
-### getMonthNumber()
+### getMonthNumber(date)
 
 -   returns month number **(01 a 12)**
 
@@ -87,7 +138,7 @@ let val = date.getDay() // => 27
 let val = date.getMonthNumber() // => 06
 ```
 
-### getMonth()
+### getMonth(date)
 
 ```javascript
 let val = date.getMonth() // => Junho
@@ -108,13 +159,19 @@ let val = date.getMonth() // => Junho
 | 11     | Novembro  |
 | 12     | Dezembro  |
 
-### getYear()
+### getShortMonth(date)
+
+```javascript
+let val = date.getShortMonth() // default => Jun
+```
+
+### getYear(date)
 
 ```javascript
 let val = date.getYear() // => 2019
 ```
 
-### getWeekdayNumber()
+### getWeekdayNumber(date)
 
 -   returns the number of the week **(1 a 7)**
 
@@ -122,7 +179,7 @@ let val = date.getYear() // => 2019
 let val = date.getWeekdayNumber() // => 5
 ```
 
-### getWeekday()
+### getWeekday(date)
 
 ```javascript
 let val = date.getWeekday() // => Quinta-Feira
@@ -138,46 +195,43 @@ let val = date.getWeekday() // => Quinta-Feira
 | 6      | Sexta-Feira   |
 | 7      | Sábado        |
 
-### getDate(delimiter)
-
--   {string} **delimiter** - used to separate day, month and year _(optional)_
+### getDate(date)
 
 ```javascript
 let val = date.getDate() // default => 27/06/2019
-let val = date.getDate('-') // => 27-06-2019
 ```
 
-### getExtendedDate()
+### getExtendedDate(date)
 
 ```javascript
 let val = date.getExtendedDate() // => 27 de Junho de 2019
 ```
 
-### getExtendedWeekdayDate()
+### getExtendedWeekdayDate(date)
 
 ```javascript
 let val = date.getExtendedWeekdayDate() // => Quinta-Feira, 27 de Junho de 2019
 ```
 
-### getExtendedCityDate(city)
-
-```javascript
-let val = date.getExtendedCityDate('São Paulo') // => São Paulo, 27 de Junho de 2019
-```
-
-### getMonthNumberYear()
+### getMonthNumberYear(date)
 
 ```javascript
 let val = date.getMonthNumberYear() // => 06/2019
 ```
 
-### getMonthYear()
+### getMonthYear(date)
 
 ```javascript
 let val = date.getMonthYear() // => Junho/2019
 ```
 
-### getHour()
+### getShortMonthYear(date)
+
+```javascript
+let val = date.getShortMonthYear() // default => Jun/2019
+```
+
+### getHour(date)
 
 -   return hours **(01 a 23)**
 
@@ -185,13 +239,13 @@ let val = date.getMonthYear() // => Junho/2019
 let val = date.getHour() // => 08
 ```
 
-### geExtendedHour()
+### geExtendedHour(date)
 
 ```javascript
 let val = date.geExtendedHour() // => 08 horas
 ```
 
-### getMinute()
+### getMinute(date)
 
 -   return minutes **(01 a 59)**
 
@@ -199,13 +253,13 @@ let val = date.geExtendedHour() // => 08 horas
 let val = date.getMinute() // => 53
 ```
 
-### getExtendedMinute()
+### getExtendedMinute(date)
 
 ```javascript
 let val = date.getExtendedMinute() // => 53 minutos
 ```
 
-### getSecond()
+### getSecond(date)
 
 -   returns seconds **(01 a 59)**
 
@@ -213,71 +267,46 @@ let val = date.getExtendedMinute() // => 53 minutos
 let val = date.getSecond() // => 32
 ```
 
-### getExtendedSecond()
+### getExtendedSecond(date)
 
 ```javascript
 let val = date.getExtendedSecond() // => 32 segundos
 ```
 
-### getTime(delimiter)
-
--   {string} **delimiter** - used to separate hours, minutes and seconds _(optional)_
+### getTime(date)
 
 ```javascript
 let val = date.getTime() // default => 08:53:32
-let val = date.getTime('-') // => 08-53-32
 ```
 
-### getExtendedTime(delimiter)
-
--   {string} **delimiter** - used to separate hours, minutes and seconds _(optional)_
+### getExtendedTime(date)
 
 ```javascript
 let val = date.getExtendedTime() // default => 08 horas e 53 minutos e 32 segundos
-let val = date.getExtendedTime(', ') // => 08 horas, 53 minutos, 32 segundos
 ```
 
-### getHourMinute(delimiter)
-
--   {string} **delimiter** - used to separate hours and minutes _(optional)_
+### getHourMinute(date)
 
 ```javascript
 let val = date.getHourMinute() // default => 08:53
-let val = date.getHourMinute('-') // => 08-53
 ```
 
-### getExtendedHourMinute(delimiter)
-
--   {string} **delimiter** - used to separate hours and minutes _(optional)_
+### getExtendedHourMinute(date)
 
 ```javascript
 let val = date.getExtendedHourMinute() // default => 08 horas e 53 minutos
-let val = date.getExtendedHourMinute(', ') // => 08 horas, 53 minutos
 ```
 
-### getDateTime(delimiter1, sep, delimiter2)
-
--   {string} **delimiter1** - used to separate day, month and year _(optional)_
--   {string} **sep** - used to separate date from time _(optional)_
--   {string} **delimiter2** - used to separate hours, minutes and seconds _(optional)_
+### getDateTime(date)
 
 ```javascript
 let val = date.getDateTime() // default => 27/06/2019 08:53:32
-let val = date.getDateTime('-', ' | ', ':') // => 27-06-2019 | 08:53:32
 ```
 
-## Format Date Functions
-
-All functions below convert dates to pr-BR.
-
-### toPtBr(date, delimiter)
-
--   {string} **date** - date to convert _(optional)_
--   {string} **delimiter** - used to separate day, month and year _(optional)_
+### getExtendedDateTime(date)
 
 ```javascript
-let val = date.toPtBr() // default => 10/07/2019
-let val = date.toPtBr('2015-12-19T10:30:00', '-') // => 19-12-2015
+let val = date.getDateTime() // default => 27 de Junho de 2019, 08 horas e 53 minutos e 32 minutos
 ```
 
 Copyright ® 2019 Victor Gianvechio
