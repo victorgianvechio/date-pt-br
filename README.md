@@ -131,7 +131,7 @@ date.setDefaultConfig()
 
 ## Date Functions
 
-All functions below are receive an optional date as a parameter. If no date is passed the function uses the current date.
+All functions below receive an **optional** date as a parameter. If no date is passed the function uses the **current** date.
 
 If the date passed is invalid the functions will return **'Invalid Date'**.
 
