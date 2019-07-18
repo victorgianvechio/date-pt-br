@@ -13,7 +13,7 @@ Get current date in pt-BR or format other dates to pt-BR.
 
 -   [Installation](#installation)
     -   [Scripts](#scripts)
-    -   [Usage](#ssage)
+    -   [Usage](#usage)
 -   [Changelog](#changelog)
 -   [Config Functions](#config-functions)
     -   [config(object)](#configobject)
@@ -35,7 +35,7 @@ Get current date in pt-BR or format other dates to pt-BR.
     -   [getShortMonthYear(date)](#getshortmonthyeardate)
     -   [getShortMonthShortYear(date)](#getshortmonthshortyeardate)
     -   [getHour(date)](#gethourdate)
-    -   [geExtendedtHour(date)](#getextendedthourdate)
+    -   [getExtendedHour(date)](#getextendedhourdate)
     -   [getMinute(date)](#getminutedate)
     -   [getExtendedMinute(date)](#getextendedminutedate)
     -   [getSecond(date)](#getseconddate)
