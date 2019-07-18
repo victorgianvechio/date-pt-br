@@ -1,5 +1,13 @@
 # Change Log
 
+## date-pt-br v1.2.1 (18 Jul 2019)
+
+-   Fixed some bugs;
+
+-   New functions:
+    -   _[getShortYear(date)](https://github.com/victorgianvechio/date-pt-br/blob/master/README.md#getshortyeardate)_
+    -   _[getShortMonthShortYear(date)](https://github.com/victorgianvechio/date-pt-br/blob/master/README.md#getshortmonthshortyeardate)_
+
 ## date-pt-br v1.2.0 (17 Jul 2019)
 
 ### Huge Updates
@@ -12,7 +20,7 @@
 
 -   Delimiters and sep must be configured after instance;
 
-Ex:
+e.g.:
 
 ```javascript
 const DatePtBR = require('date-pt-br')
