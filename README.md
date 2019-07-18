@@ -309,10 +309,10 @@ let val = date.getShortMonthYear() // => Jun/19
 let val = date.getHour() // => 08
 ```
 
-### geExtendedHour(date)
+### getExtendedHour(date)
 
 ```javascript
-let val = date.geExtendedHour() // => 08 horas
+let val = date.getExtendedHour() // => 08 horas
 ```
 
 ### getMinute(date)
