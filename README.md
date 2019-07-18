@@ -103,7 +103,7 @@ see the update notes at [CHANGELOG](https://github.com/victorgianvechio/date-pt-
     -   default: **' de '**
     -   e.g.: 02 **de** Janeiro **de** 2019
 
--   {string} **sepDate** - used to separate time. 
+-   {string} **sepTime** - used to separate time. 
 
     -   default: **' e '**
     -   e.g.: 08 horas **e** 53 minutos **e** 20 segundos
