@@ -2,15 +2,11 @@
 
 [![npm](https://img.shields.io/npm/dt/date-pt-br.svg)](https://www.npmjs.com/package/date-pt-br)
 [![license](https://img.shields.io/npm/l/date-pt-br.svg)](https://github.com/victorgianvechio/date-pt-br/blob/master/LICENSE)
-[![version](https://img.shields.io/npm/v/date-pt-br.svg)](https://github.com/victorgianvechio/date-pt-br/blob/master/CHANGELOG.md)
-
-
-[![Build Status](https://travis-ci.org/victorgianvechio/date-pt-br.svg?branch=master)](https://travis-ci.org/victorgianvechio/date-pt-br)
-[![Test Coverage](https://codeclimate.com/github/victorgianvechio/date-pt-br/badges/coverage.svg)](https://codeclimate.com/github/victorgianvechio/date-pt-br)
-[![Code Climate](https://codeclimate.com/github/victorgianvechio/date-pt-br/badges/gpa.svg)](https://codeclimate.com/github/victorgianvechio/date-pt-br)
-[![Dependency Status](https://david-dm.org/victorgianvechio/date-pt-br.svg)](https://david-dm.org/victorgianvechio/date-pt-br)
-[![Node version](https://img.shields.io/node/v/date-pt-br.svg?style=flat)](http://nodejs.org/download/)
+<!-- [![version](https://img.shields.io/npm/v/date-pt-br.svg)](https://github.com/victorgianvechio/date-pt-br/blob/master/CHANGELOG.md) -->
 [![NPM Version](https://badge.fury.io/js/date-pt-br.svg?style=flat)](https://npmjs.org/package/date-pt-br)
+[![Build Status](https://travis-ci.org/victorgianvechio/date-pt-br.svg?branch=master)](https://travis-ci.org/victorgianvechio/date-pt-br)
+[![Dependency Status](https://david-dm.org/victorgianvechio/date-pt-br.svg)](https://david-dm.org/victorgianvechio/date-pt-br)
+
 
 Get current date in pt-BR or format other dates to pt-BR.
 
