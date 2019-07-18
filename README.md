@@ -21,6 +21,7 @@ Get current date in pt-BR or format other dates to pt-BR.
     -   [getMonth(date)](#getMonthDate)
     -   [getShortMonth(date)](#getShortMonthDate)
     -   [getYear(date)](#getYearDate)
+    -   [getShortYear(date)](#getShortYearDate)
     -   [getWeekdayNumber(date)](#getWeekdayNumberDate)
     -   [getWeekday(date)](#getWeekdayDate)
     -   [getDate(date)](#getDateDate)
@@ -29,6 +30,7 @@ Get current date in pt-BR or format other dates to pt-BR.
     -   [getMonthNumberYear(date)](#getMonthNumberYearDate)
     -   [getMonthYear(date)](#getMonthYearDate)
     -   [getShortMonthYear(date)](#getShortMonthYearDate)
+    -   [getShortMonthShortYear(date)](#getShortMonthShortYearDate)
     -   [getHour(date)](#getHourDate)
     -   [geExtendedtHour(date)](#geExtendedtHourDate)
     -   [getMinute(date)](#GetMinuteDate)
@@ -79,28 +81,28 @@ see the update notes at [CHANGELOG](https://github.com/victorgianvechio/date-pt-
 
 -   {string} **delimiterDate** - used to separate day, month and year. 
 
-    -   Default: **' / '**
-    -   Ex: 02 **/** 11 **/** 2019
+    -   default: **' / '**
+    -   e.g.: 02 **/** 11 **/** 2019
 
 -   {string} **delimiterTime** - used to separate hours, minutes and seconds.
 
-    -   Default: **' : '**
-    -   Ex: 08 **:** 53 **:** 20
+    -   default: **' : '**
+    -   e.g.: 08 **:** 53 **:** 20
 
 -   {string} **sepDateTime** - used to separate date and time.
 
-    -   Default: **' , '**
-    -   Ex: 02/01/2019 **,** 08:53:20
+    -   default: **' , '**
+    -   e.g.: 02/01/2019 **,** 08:53:20
 
 -   {string} **sepDate** - used to separate date. 
 
-    -   Default: **' de '**
-    -   Ex: 02 **de** Janeiro **de** 2019
+    -   default: **' de '**
+    -   e.g.: 02 **de** Janeiro **de** 2019
 
 -   {string} **sepDate** - used to separate time. 
 
-    -   Default: **' e '**
-    -   Ex: 08 horas **e** 53 minutos **e** 20 segundos
+    -   default: **' e '**
+    -   e.g.: 08 horas **e** 53 minutos **e** 20 segundos
 
 ```javascript
 const DatePtBR = require('date-pt-br')
@@ -133,9 +135,31 @@ date.setDefaultConfig()
 
 All functions below receive an **optional** date as a parameter. If no date is passed the function uses the **current** date.
 
-If the date passed is invalid the functions will return **'Invalid Date'**.
+-   {string} **date** - accepts various formats _(optional)_
 
--   {string} **date** - a date _(optional)_
+**e.g.**:
+
+```javascript
+date.getDateTime('2012-01-26T13:51:50.417-07:00') // => 26/01/2012, 18:51:50
+
+date.getTime('05/07/2019 08:54:32') // => 08:54:32
+
+date.getDate('October 15, 1996 05: 35: 32') // => 15/10/1996
+
+date.getExtendedWeekdayDate('2017-09-08T15:25:53Z') // => Sexta-Feira, 08 de Setembro de 2017
+
+date.getMonthNumber('05 October 2011 14:48 UTC') // => 10
+
+date.getDateTime('07/24/2015') // => 24/07/2018, 00:00:00
+
+date.getWeekday('05 October 2011 14:48 UTC') // => Quarta-Feira
+
+date.getExtendedTime('Wed Oct 05 2011 16:48:00 GMT+0200 (CEST)' // => 11 horas e 48 minutos e 00 segundos
+
+date.getShortMonthYear('2011-10-05T14:48:00.000Z') // => Out/2011
+```
+
+If the date passed is invalid the functions will return **'Invalid Date'**.
 
 ### getDay(date)
 
@@ -177,7 +201,7 @@ let val = date.getMonth() // => Junho
 ### getShortMonth(date)
 
 ```javascript
-let val = date.getShortMonth() // default => Jun
+let val = date.getShortMonth() // => Jun
 ```
 
 | number | month |
@@ -199,6 +223,12 @@ let val = date.getShortMonth() // default => Jun
 
 ```javascript
 let val = date.getYear() // => 2019
+```
+
+### getShortYear(date)
+
+```javascript
+let val = date.getShortYear('07/18/2019') // => 19
 ```
 
 ### getWeekdayNumber(date)
@@ -228,7 +258,7 @@ let val = date.getWeekday() // => Quinta-Feira
 ### getDate(date)
 
 ```javascript
-let val = date.getDate() // default => 27/06/2019
+let val = date.getDate() // => 27/06/2019
 ```
 
 ### getExtendedDate(date)
@@ -258,7 +288,13 @@ let val = date.getMonthYear() // => Junho/2019
 ### getShortMonthYear(date)
 
 ```javascript
-let val = date.getShortMonthYear() // default => Jun/2019
+let val = date.getShortMonthYear() // => Jun/2019
+```
+
+### getShortMonthShortYear(date)
+
+```javascript
+let val = date.getShortMonthYear() // => Jun/19
 ```
 
 ### getHour(date)
@@ -306,37 +342,37 @@ let val = date.getExtendedSecond() // => 32 segundos
 ### getTime(date)
 
 ```javascript
-let val = date.getTime() // default => 08:53:32
+let val = date.getTime() // => 08:53:32
 ```
 
 ### getExtendedTime(date)
 
 ```javascript
-let val = date.getExtendedTime() // default => 08 horas e 53 minutos e 32 segundos
+let val = date.getExtendedTime() // => 08 horas e 53 minutos e 32 segundos
 ```
 
 ### getHourMinute(date)
 
 ```javascript
-let val = date.getHourMinute() // default => 08:53
+let val = date.getHourMinute() // => 08:53
 ```
 
 ### getExtendedHourMinute(date)
 
 ```javascript
-let val = date.getExtendedHourMinute() // default => 08 horas e 53 minutos
+let val = date.getExtendedHourMinute() // => 08 horas e 53 minutos
 ```
 
 ### getDateTime(date)
 
 ```javascript
-let val = date.getDateTime() // default => 27/06/2019 08:53:32
+let val = date.getDateTime() // => 27/06/2019 08:53:32
 ```
 
 ### getExtendedDateTime(date)
 
 ```javascript
-let val = date.getDateTime() // default => 27 de Junho de 2019, 08 horas e 53 minutos e 32 minutos
+let val = date.getDateTime() // => 27 de Junho de 2019, 08 horas e 53 minutos e 32 segundos
 ```
 
 Copyright ® 2019 Victor Gianvechio
