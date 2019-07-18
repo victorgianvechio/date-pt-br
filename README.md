@@ -1,8 +1,17 @@
-# date-pt-br
+# *date-pt-br*
+====
 
 [![npm](https://img.shields.io/npm/dt/date-pt-br.svg)](https://www.npmjs.com/package/date-pt-br)
 [![license](https://img.shields.io/npm/l/date-pt-br.svg)](https://github.com/victorgianvechio/date-pt-br/blob/master/LICENSE)
 [![version](https://img.shields.io/npm/v/date-pt-br.svg)](https://github.com/victorgianvechio/date-pt-br/blob/master/CHANGELOG.md)
+
+
+[![Build Status](https://travis-ci.org/dwyl/date-pt-br.svg?branch=master)](https://travis-ci.org/dwyl/date-pt-br)
+[![Test Coverage](https://codeclimate.com/github/dwyl/date-pt-br/badges/coverage.svg)](https://codeclimate.com/github/dwyl/date-pt-br)
+[![Code Climate](https://codeclimate.com/github/dwyl/date-pt-br/badges/gpa.svg)](https://codeclimate.com/github/dwyl/date-pt-br)
+[![Dependency Status](https://david-dm.org/dwyl/date-pt-br.svg)](https://david-dm.org/dwyl/date-pt-br)
+[![Node version](https://img.shields.io/node/v/date-pt-br.svg?style=flat)](http://nodejs.org/download/)
+[![NPM Version](https://badge.fury.io/js/date-pt-br.svg?style=flat)](https://npmjs.org/package/date-pt-br)
 
 Get current date in pt-BR or format other dates to pt-BR.
 
@@ -119,8 +128,6 @@ date.config({
 
 ### setDefaultConfig()
 
--   set default config
-
 ```javascript
 date.setDefaultConfig()
 
@@ -157,6 +164,8 @@ date.getWeekday('05 October 2011 14:48 UTC') // => Quarta-Feira
 date.getExtendedTime('Wed Oct 05 2011 16:48:00 GMT+0200 (CEST)' // => 11 horas e 48 minutos e 00 segundos
 
 date.getShortMonthYear('2011-10-05T14:48:00.000Z') // => Out/2011
+
+date.getDay('24HJERH87LK4') // => Invalid Date
 ```
 
 If the date passed is invalid the functions will return **'Invalid Date'**.
