@@ -83,27 +83,27 @@ see the update notes at [CHANGELOG](https://github.com/victorgianvechio/date-pt-
 
 -   set delimiters and sep that are used by the functions.
 
--   {string} **delimiterDate** - used to separate day, month and year. 
+-   {string} **delimiterDate** - used to separate day, month and year
 
     -   default: **' / '**
     -   e.g.: 02 **/** 11 **/** 2019
 
--   {string} **delimiterTime** - used to separate hours, minutes and seconds.
+-   {string} **delimiterTime** - used to separate hours, minutes and seconds
 
     -   default: **' : '**
     -   e.g.: 08 **:** 53 **:** 20
 
--   {string} **sepDateTime** - used to separate date and time.
+-   {string} **sepDateTime** - used to separate date and time
 
     -   default: **' , '**
     -   e.g.: 02/01/2019 **,** 08:53:20
 
--   {string} **sepDate** - used to separate date. 
+-   {string} **sepDate** - used to separate date
 
     -   default: **' de '**
     -   e.g.: 02 **de** Janeiro **de** 2019
 
--   {string} **sepTime** - used to separate time. 
+-   {string} **sepTime** - used to separate time
 
     -   default: **' e '**
     -   e.g.: 08 horas **e** 53 minutos **e** 20 segundos
