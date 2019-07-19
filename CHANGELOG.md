@@ -14,9 +14,9 @@
 
 -   All codes were refactored;
 
--   Now date-en-br is a **class** and needs to be **instantiated**;
+-   Now date-pt-br is a **class** and needs to be **instantiated**;
 
--   Now all functions have only one **optional** parameter **(date)**. If no date is passed the function will use the current date;
+-   All functions have only one **optional** parameter **(date)**. If no date is passed the function will use the current date;
 
 -   Delimiters and sep must be configured after instance;
 
