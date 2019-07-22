@@ -1,10 +1,10 @@
 # *date-pt-br*
 
-[![npm](https://img.shields.io/npm/dt/date-pt-br.svg)](https://www.npmjs.com/package/date-pt-br)
-![monthly npm downloads for date-pt-br](https://img.shields.io/npm/dm/date-pt-br.svg)
-[![license](https://img.shields.io/npm/l/date-pt-br.svg)](https://github.com/victorgianvechio/date-pt-br/blob/master/LICENSE)
 [![NPM Version](https://badge.fury.io/js/date-pt-br.svg?style=flat)](https://npmjs.org/package/date-pt-br)
 [![Build Status](https://travis-ci.org/victorgianvechio/date-pt-br.svg?branch=master)](https://travis-ci.org/victorgianvechio/date-pt-br)
+[![license](https://img.shields.io/npm/l/date-pt-br.svg)](https://github.com/victorgianvechio/date-pt-br/blob/master/LICENSE)
+[![npm](https://img.shields.io/npm/dt/date-pt-br.svg)](https://www.npmjs.com/package/date-pt-br)
+![monthly npm downloads for date-pt-br](https://img.shields.io/npm/dm/date-pt-br.svg)
 [![Dependency Status](https://david-dm.org/victorgianvechio/date-pt-br.svg)](https://david-dm.org/victorgianvechio/date-pt-br)
 
 
