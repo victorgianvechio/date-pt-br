@@ -1,5 +1,30 @@
 # Change Log
 
+## date-pt-br v1.2.2 (22 Jul 2019)
+
+-   Fixed README;
+
+### New functions
+
+All new functions is _asynchronous_
+
+-   date functions:
+     -   _[getExtendedCityDate(date)](https://github.com/victorgianvechio/date-pt-br/blob/master/README.md#getextendedcitydatedate)_
+    -   _[getExtendedRegionDate(date)](https://github.com/victorgianvechio/date-pt-br/blob/master/README.md#getextendedregiondatedate)_
+     -   _[getExtendedShortRegionDate(date)](https://github.com/victorgianvechio/date-pt-br/blob/master/README.md#getextendedshortregiondatedate)_
+    -   _[getExtendedCountry(date)](https://github.com/victorgianvechio/date-pt-br/blob/master/README.md#getextendedcountrydatedate)_
+    -   _[getExtendedShortCountry(date)](https://github.com/victorgianvechio/date-pt-br/blob/master/README.md#getextendedshortcountrydatedate)_
+
+-   current locale functions:
+
+    -   _[getCity()](https://github.com/victorgianvechio/date-pt-br/blob/master/README.md#getcity)_
+    -   _[getRegion()](https://github.com/victorgianvechio/date-pt-br/blob/master/README.md#getregion)_
+    -   _[getShortRegion()](https://github.com/victorgianvechio/date-pt-br/blob/master/README.md#getshortregion)_
+    -   _[getCountry()](https://github.com/victorgianvechio/date-pt-br/blob/master/README.md#getcountry)_
+    -   _[getShortCountry()](https://github.com/victorgianvechio/date-pt-br/blob/master/README.md#getshortcountry)_
+    -   _[getTimezone()](https://github.com/victorgianvechio/date-pt-br/blob/master/README.md#gettimezone)_
+    -   _[getZipcode()](https://github.com/victorgianvechio/date-pt-br/blob/master/README.md#getzipcode)_
+
 ## date-pt-br v1.2.1 (18 Jul 2019)
 
 -   Fixed some bugs;
@@ -26,7 +51,7 @@ e.g.:
 const DatePtBR = require('date-pt-br')
 const date = new DatePtBR()
 
-myDate.config({
+date.config({
     delimiterDate: '/',
     delimiterTime: ':',
     sepDateTime: ', ',
