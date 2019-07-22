@@ -95,7 +95,7 @@ see the update notes at [CHANGELOG](https://github.com/victorgianvechio/date-pt-
 
 ### config(object)
 
--   set delimiters and sep that are used by the functions.
+delimiters and sep are used by the functions.
 
 -   {string} **delimiterDate** - used to separate day, month and year
 
