@@ -1,6 +1,7 @@
 # *date-pt-br*
 
 [![npm](https://img.shields.io/npm/dt/date-pt-br.svg)](https://www.npmjs.com/package/date-pt-br)
+![monthly npm downloads for date-pt-br](https://img.shields.io/npm/dm/date-pt-br.svg)
 [![license](https://img.shields.io/npm/l/date-pt-br.svg)](https://github.com/victorgianvechio/date-pt-br/blob/master/LICENSE)
 [![NPM Version](https://badge.fury.io/js/date-pt-br.svg?style=flat)](https://npmjs.org/package/date-pt-br)
 [![Build Status](https://travis-ci.org/victorgianvechio/date-pt-br.svg?branch=master)](https://travis-ci.org/victorgianvechio/date-pt-br)
@@ -46,6 +47,19 @@ Get current date in pt-BR or format other dates to pt-BR.
     -   [getExtendedHourMinute(date)](#getextendedhourminutedate)
     -   [getDateTime(date)](#getdatetimedate)
     -   [getExtendedDateTime(date)](#getextendeddatetimedate)
+    -   [getExtendedCityDate(date)](#getextendedcitydatedate)
+    -   [getExtendedRegionDate(date)](#getextendedregiondatedate)
+    -   [getExtendedShortRegionDate(date)](#getextendedshortregiondatedate)
+    -   [getExtendedCountryDate(date)](#getextendedcountrydatedate)
+    -   [getExtendedShortCountryDate(date)](#getextendedshortcountrydatedate)
+-   [Current Locale Functions](#current-locale-functions)
+    -   [getCity()](#getcity)
+    -   [getRegion()](#getregion)
+    -   [getShortRegion()](#getshortregion)
+    -   [getCountry()](#getcountry)
+    -   [getShortCountry()](#getshortcountry)
+    -   [getTimezone()](#gettimezone)
+    -   [getZipcode()](#getzipcode)
 -   [License](#license)
 
 ---
@@ -376,7 +390,107 @@ let val = date.getDateTime() // => 27/06/2019 08:53:32
 ### getExtendedDateTime(date)
 
 ```javascript
-let val = date.getDateTime() // => 27 de Junho de 2019, 08 horas e 53 minutos e 32 segundos
+let val = date.getExtendedDateTime() // => 27 de Junho de 2019, 08 horas e 53 minutos e 32 segundos
+```
+
+### getExtendedCityDate(date)
+
+_asynchronous function_
+
+```javascript
+let val = await date.getExtendedCityDate() // =>  Marília, 22 de Julho de 2019
+```
+
+### getExtendedRegionDate(date)
+
+_asynchronous function_
+
+```javascript
+let val = await date.getExtendedRegionDate() // =>  São Paulo, 22 de Julho de 2019
+```
+
+### getExtendedShortRegionDate(date)
+
+_asynchronous function_
+
+```javascript
+let val = await date.getExtendedShortRegionDate() // =>  SP, 22 de Julho de 2019
+```
+
+### getExtendedCountryDate(date)
+
+_asynchronous function_
+
+```javascript
+let val = await date.getExtendedCountryDate() // =>  Brazil, 22 de Julho de 2019
+```
+
+### getExtendedShortCountryDate(date)
+
+_asynchronous function_
+
+```javascript
+let val = await date.getExtendedShortCountryDate() // =>  BR, 22 de Julho de 2019
+```
+
+## Current Locale Functions
+
+All functions bellow are _asynchronous_ and returns current locale informations.
+
+### getCity()
+
+_asynchronous function_
+
+```javascript
+let val = await date.getCity() // => Marília
+```
+
+### getRegion()
+
+_asynchronous function_
+
+```javascript
+let val = await date.getRegion() // => São Paulo
+```
+
+### getShortRegion()
+
+_asynchronous function_
+
+```javascript
+let val = await date.getShortRegion() // => SP
+```
+
+### getCountry()
+
+_asynchronous function_
+
+```javascript
+let val = await date.getCountry() // => Brazil
+```
+
+### getShortCountry()
+
+_asynchronous function_
+
+```javascript
+let val = await date.getShortCountry() // => BR
+```
+
+### getTimezone()
+
+_asynchronous function_
+
+```javascript
+let val = await date.getTimezone() // => America/Sao_Paulo
+```
+
+### getZipcode()
+
+_asynchronous function_
+
+```javascript
+let val = await date.getZipcode() // => 17350-000
 ```
 
 ## License
