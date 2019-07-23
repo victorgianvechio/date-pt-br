@@ -72,11 +72,11 @@ it does not make sense since all the functions already do the conversion after t
 
 #### New functions
 
--   _getShortMonth(date)_;
--   _getShortMonthYear(date)_;
--   _getExtendedDateTime(date)_;
--   _config(object)_;
--   _setDefaultConfig()_;
+-   _[getShortMonth(date)](https://github.com/victorgianvechio/date-pt-br/blob/master/README.md#getshortmonthdate)_;
+-   _[getShortMonthYear(date)](https://github.com/victorgianvechio/date-pt-br/blob/master/README.md#getshortmonthyeardate)_;
+-   _[getExtendedDateTime(date)](https://github.com/victorgianvechio/date-pt-br/blob/master/README.md#getextendeddatetimedate)_;
+-   _[config(object)](https://github.com/victorgianvechio/date-pt-br/blob/master/README.md#configobject)_;
+-   _[setDefaultConfig()](https://github.com/victorgianvechio/date-pt-br/blob/master/README.md#setdefaultconfig)_;
 
 see more about this update at [README](https://github.com/victorgianvechio/date-pt-br/blob/master/README.md).
 
